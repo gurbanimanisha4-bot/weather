@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* 🌈 MODERN GRADIENT */
+.app {
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.top {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+/* SEARCH */
+.search {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search input {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  width: 260px;
+}
+
+.search button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #ff7a18;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255, 122, 24, 0.5);
+}
+
+/* CURRENT */
+.current {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.current img {
+  width: 120px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.desc {
+  opacity: 0.8;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+/* 🔥 FORECAST CARDS */
+.forecast {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-card {
+  width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+
+  text-align: center;
+  transition: 0.3s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.forecast-card img {
+  width: 50px;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.temp-small {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.desc-small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+/* STATES */
+.loading {
+  margin-top: 20px;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 20px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .forecast-card {
+    width: 90px;
+  }
+
+  .temp {
+    font-size: 3rem;
+  }
+}
